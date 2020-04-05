@@ -248,3 +248,26 @@ img{
 }
 
 /*=====  End of brand, category, shop tab css  ======*/
+
+/*======================================
+=            trendy now css            =
+======================================*/
+
+.trendy-now-header{
+	border-bottom: 1px solid #041054;
+	margin-top: 60px;
+	margin-bottom: 100px;
+	color:#041054;
+}
+
+.trendy-now-header button{
+	margin-top: -10px;
+	padding: 10px 30px;
+	background-color: #041054;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	float: right;
+}
+/*=====  End of trendy now css  ======*/

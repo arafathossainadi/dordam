@@ -41,9 +41,9 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1360px) {
   .container {
-    max-width: 1140px;
+    max-width: 1300px;
   }
 }
 
@@ -73,9 +73,9 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1360px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px;
+    max-width: 1300px;
   }
 }
 
