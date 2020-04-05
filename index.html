@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dordam</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<!--============================
+	=            header            =
+	=============================-->
+	<section class="container-fluid header" style="border-bottom: 1px solid #000000">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-2"><img src="images/logo.png" class="logo"></div>
+				<div class="col-xl-6" style="position: relative;">
+					<input type="text" name="search" placeholder="Search Your Desired Product here" class="search">
+					<button class="search-button"><i class="fa fa-search"></i></button>
+				</div>
+				<div class="col-xl-4">
+					<div class="account-compare">
+						<div class="account-compare-icon">
+							<i class="fa fa-balance-scale"></i>
+						</div>
+						<div class="account-compare-text">
+							<p style="color:#041054"><strong>Compare</strong></p>
+							<p style="color: #0000007a"><a href="#">0(Items)</a></p>
+						</div>
+					</div>
+					<div class="account-compare" style="margin-right: 15px;">
+						<div class="account-compare-icon">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="account-compare-text">
+							<p style="color:#041054"><strong>Account</strong></p>
+							<p style="color: #0000007a"><a href="#">Sign In</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--================================
+	=            navigation            =
+	=================================-->
+	<section class="container-fluid navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<ul>
+						<li><a href="#">Desktop</a></li>
+						<li><a href="#">Laptop</a></li>
+						<li><a href="#">Component</a></li>
+						<li><a href="#">Monitor</a></li>
+						<li><a href="#">Camera</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--============================
+	=            banner            =
+	=============================-->
+	<section class="home-banner container">
+		<div id="home-carousel" class="carousel slide" data-ride="carousel">
+		  
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		  	<!-- Indicators -->
+		  	<ol class="carousel-indicators">
+		  	  <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+		  	  <li data-target="#home-carousel" data-slide-to="1"></li>
+		  	  <li data-target="#home-carousel" data-slide-to="2"></li>
+		  	</ol>
+		  	<div class="search-and-compare">
+		  		<h1>
+		  			Search & Compare <br> 
+		  			Your Desired Product <br>
+		  			<span style="font-size: 20px; font-weight: 400;">Easily & Efficiently</span>
+		  		</h1>
+		  		<input type="text" name="" placeholder="Search Product 1" style="margin-top: 15px"><br>
+		  		<input type="text" name="" placeholder="Search Product 2" style="margin-top: 10px"><br>
+		  		<input type="submit" value="Compare Now" name="" style="margin-top: 15px;">
+		  	</div>
+		    <div class="item active">
+		      <img src="images/banner.png" alt="...">
+		    </div>
+		    <div class="item">
+		      <img src="http://placehold.it/1300x460&text=Slide_02" alt="...">
+		    </div>
+		    <div class="item">
+		      <img src="http://placehold.it/1300x460&text=Slide_03" alt="...">
+		    </div>
+		  </div>
+		</div>
+	</section>
+
+	<!--=============================================
+	=           brand, cagory, shop tab            =
+	==============================================-->
+	<section class="container home-tab">
+		<div class="tab-header">
+			<div class="row">
+				<div class="col-xl-4">
+					<button class="tab-btn  tablink tab-btn-active" onclick="openItem(event,'Brands')">Brands</button>
+				</div>
+				<div class="col-xl-4">
+					<button class="tab-btn  tablink" onclick="openItem(event,'Categories')">Categories</button>
+				</div>
+				<div class="col-xl-4">
+					<button class="tab-btn  tablink" onclick="openItem(event,'Shops')">Shops</button>
+				</div>
+			</div>
+		</div>		  
+		<div class="tab-element">
+			<div id="Brands" class="tabHeaderName">
+				<div class="row">
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<a href="#"><img src="images/brands/antec-logo.png"></a>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<a href="#"><img src="images/brands/asrock.png"></a>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<a href="#"><img src="images/brands/bitfenix-copy-%5BConverted%5D.png"></a>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<a href="#"><img src="images/brands/CMYK__THS_Razer_horz_fill.png"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<a href="#"><img src="images/brands/cryorig-logo_symbol_white-copy-%5BConverted%5D.png"></a>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<a href="#"><img src="images/brands/ESET-logo---Compact---Colour---Dark-Turq-tag---RGB.png"></a>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<a href="#"><img src="images/brands/galax-seeklogo.com.png"></a>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<a href="#"><img src="images/brands/gamdias-logo-copy-%5BConverted%5D.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="Categories" class="w3-container w3-border tabHeaderName" style="display:none">
+				<div class="row">
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<div class="tab-element-info">
+								<a href="#"><img src="images/categories/desktop.png"></a>
+								<p>Desktop</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<div class="tab-element-info">
+								<a href="#"><img src="images/categories/laptop.png"></a>
+								<p>Laptop</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<div class="tab-element-info">
+								<a href="#"><img src="images/categories/component.png" ></a>
+								<p>Component</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<div class="tab-element-info">
+								<a href="#"><img src="images/categories/monitor.png"></a>
+								<p>Monitor</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<div class="tab-element-info">
+								<a href="#"><img src="images/categories/office%20equipment.png"></a>
+								<p>Office Equipment</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<a href="#"><img src="images/brands/ESET-logo---Compact---Colour---Dark-Turq-tag---RGB.png"></a>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<a href="#"><img src="images/brands/galax-seeklogo.com.png"></a>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="tab-element-placeholder">
+							<a href="#"><img src="images/brands/gamdias-logo-copy-%5BConverted%5D.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="Shops" class="w3-container w3-border tabHeaderName" style="display:none">
+				<h1>shops</h1>
+			</div>
+		</div>
+	</section>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script src="js/tabs.js"></script>
+</body>
+</html>
+
+
+
+
