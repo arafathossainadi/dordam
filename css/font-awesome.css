@@ -100,3 +100,7 @@
 .fa-balance-scale::before{
   content: "\f24e";
 }
+
+.fa-paper-plane::before{
+  content: "\f1d8"
+}

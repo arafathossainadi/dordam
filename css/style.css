@@ -268,7 +268,7 @@ button{
 /*=====  End of brand, category, shop tab css  ======*/
 
 /*======================================
-=            trendy now css            =
+=            trendy now & latest laptop css            =
 ======================================*/
 
 .product-section-header{
@@ -335,3 +335,46 @@ button{
 	vertical-align: 1px;
 }
 /*=====  End of trendy now css  ======*/
+
+/*==================================
+=            fotter css            =
+==================================*/
+
+.footer-top{
+	background-color: #1C1C1C;
+	margin-top: 60px;
+	padding-top: 30px;
+	height: 500px;
+}
+
+.footer-top h2{
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.newsletter{
+	position: relative;
+}
+
+.newsletter input:first-child{
+	width: 100%;
+	padding: 15px;
+	border-radius: 5px;
+	border: none;
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+}
+
+.newsletter button{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	right: 3px;
+	top: 2.5px;
+}
+
+/*=====  End of fotter css  ======*/
