@@ -147,6 +147,28 @@ button{
 }
 /*======= end of header & navigation css  ======*/
 
+/*======================================
+=            sticky nav css            =
+======================================*/
+
+#myHeader{
+	z-index: 1;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/*=====  End of sticky nav css  ======*/
+
+
 /*=========================================
 =            home carousel css            =
 =========================================*/

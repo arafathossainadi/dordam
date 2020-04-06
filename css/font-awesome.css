@@ -108,3 +108,7 @@
 .fa-whatsapp::before{
   content: "\f232";
 }
+
+.fa-skype::before{
+  content: "\f17e";
+}
