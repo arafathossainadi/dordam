@@ -344,7 +344,7 @@ button{
 	background-color: #1C1C1C;
 	margin-top: 60px;
 	padding-top: 30px;
-	height: 500px;
+	height: 200px;
 }
 
 .footer-top h2{
@@ -377,4 +377,62 @@ button{
 	top: 2.5px;
 }
 
+.footer-top hr{
+	margin-top: 75px;
+	border-color: gray;
+}
+
+.menu-links{
+	margin-top: 15px;
+}
+
+.footer-top ul, .footer-bottom ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+.footer-top li, .footer-bottom li{
+	display: inline;
+	margin: 0 30px;
+	color: white;
+}
+
+
+.social-links{
+	margin-top: 30px;
+	text-align: center;
+}
+
+
+
+.social-links .icon{
+	background-color: #041054;
+	color: white;
+	width: 45px;
+	height: 45px;
+	border-radius: 90px;
+	position: relative;
+	display: inline-block;
+	margin: 0 15px;
+	transition: 0.2s all ease-in-out;
+}
+
+.social-links .icon:hover{
+	background-color: transparent;
+	color: #041054;
+	border: 2px solid #041054;
+	box-sizing: border-box;
+}
+
+.social-links i{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.copyright{
+	text-align: center;
+	margin: 15px 0;
+}
 /*=====  End of fotter css  ======*/

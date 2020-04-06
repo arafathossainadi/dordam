@@ -104,3 +104,7 @@
 .fa-paper-plane::before{
   content: "\f1d8"
 }
+
+.fa-whatsapp::before{
+  content: "\f232";
+}
