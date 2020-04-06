@@ -152,7 +152,7 @@ button{
 ======================================*/
 
 #myHeader{
-	z-index: 1;
+	z-index: 2;
 }
 .content {
   padding: 16px;
@@ -458,3 +458,46 @@ button{
 	margin: 15px 0;
 }
 /*=====  End of fotter css  ======*/
+
+/*==================================
+=            responsive            =
+==================================*/
+
+@media only screen and (max-width: 1360px) {
+  .search{
+  	right: -20px;
+  }
+
+  .search-button{
+  	right: -20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .product-placeholder button:nth-child(4){
+  	    padding: 10px 30px;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+	.logo{
+		width: 100%;
+		margin-top: 8px;
+	}
+
+	.search, .search-button{
+		right: -10px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+	.product-placeholder button:nth-child(4){
+		margin-left: 18px;
+	}
+}
+/*=====  End of responsive  ======*/
+
