@@ -112,3 +112,11 @@
 .fa-skype::before{
   content: "\f17e";
 }
+
+.fa-chevron-right::before{
+  content: "\f054";
+}
+
+.fa-chevron-down{
+  content: "\f078";
+}

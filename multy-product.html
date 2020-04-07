@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dordam</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/multy-product.css">
+</head>
+<body>
+
+	<!--============================
+	=            header            =
+	=============================-->
+	<section class="container-fluid header" style="border-bottom: 1px solid #000000">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6"><a href="index.html"><img src="images/logo.png" class="logo"></a></div>
+				<div class="col-sm-6 col-6 mobile-account-compare">
+					<div class="account-compare">
+						<div class="account-compare-icon">
+							<i class="fa fa-balance-scale header-icon"></i>
+						</div>
+						<div class="account-compare-text">
+							<p style="color:#041054"><strong>Compare</strong></p>
+							<p style="color: #0000007a"><a href="#">0(Items)</a></p>
+						</div>
+					</div>
+					<div class="account-compare" style="margin-right: 15px;">
+						<div class="account-compare-icon">
+							<i class="fa fa-user header-icon"></i>
+						</div>
+						<div class="account-compare-text">
+							<p style="color:#041054"><strong>Account</strong></p>
+							<p style="color: #0000007a"><a href="#">Sign In</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-5 col-sm-12" style="position: relative;">
+					<input type="text" name="search" placeholder="Search Your Desired Product here" class="search">
+					<button class="search-button"><i class="fa fa-search"></i></button>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 lgmd-account-compare">
+					<div class="account-compare">
+						<div class="account-compare-icon">
+							<i class="fa fa-balance-scale header-icon"></i>
+						</div>
+						<div class="account-compare-text">
+							<p style="color:#041054"><strong>Compare</strong></p>
+							<p style="color: #0000007a"><a href="#">0(Items)</a></p>
+						</div>
+					</div>
+					<div class="account-compare" style="margin-right: 15px;">
+						<div class="account-compare-icon">
+							<i class="fa fa-user header-icon"></i>
+						</div>
+						<div class="account-compare-text">
+							<p style="color:#041054"><strong>Account</strong></p>
+							<p style="color: #0000007a"><a href="#">Sign In</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--================================
+	=            navigation            =
+	=================================-->
+	<div id="myHeader">
+		<section class="container-fluid navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="navbar">
+						  <div class="dropdown" style="margin-left: unset;">
+						    <button class="dropbtn">Desktop
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#">Link 1</a>
+						      <a href="#">Link 2</a>
+						      <a href="#">Link 3</a>
+						    </div>
+						  </div>
+						  <div class="dropdown">
+						    <button class="dropbtn">Laptop
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#">Link 1</a>
+						      <a href="#">Link 2</a>
+						      <a href="#">Link 3</a>
+						    </div>
+						  </div>
+						  <div class="dropdown">
+						    <button class="dropbtn">Camera
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#">Link 1</a>
+						      <a href="#">Link 2</a>
+						      <a href="#">Link 3</a>
+						    </div>
+						  </div>
+						  <div class="dropdown">
+						    <button class="dropbtn">Monitor
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#">Link 1</a>
+						      <a href="#">Link 2</a>
+						      <a href="#">Link 3</a>
+						    </div>
+						  </div>
+						  <div class="dropdown">
+						    <button class="dropbtn">Component
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#">Link 1</a>
+						      <a href="#">Link 2</a>
+						      <a href="#">Link 3</a>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!--================================
+	=            breadcrumb            =
+	=================================-->
+	<section class="container">
+		<div class="breadcrumb">
+			<ul>
+				<li><a href="#"><span style="margin-right: 5px;"><i class="fa fa-home"></i></span>Home</a></li>
+				<li><a href="#">Laptops</a></li>
+			</ul>
+		</div>
+	</section>
+	
+	<!--===================================
+	=            latest laptop            =
+	====================================-->
+	<section class="container">
+		<div class="row">
+
+			<!--===============================================
+			=            price range & filter list            =
+			================================================-->
+			<div class="col-xl-3">
+				<div class="price-range">
+					<hr>
+					<p>
+					  <strong>Price Range</strong>
+					</p>
+					<div id="slider-range">
+					</div>
+					<div class="price-range-inputs">
+						<input type="text" id="amount1">
+						<input type="text" id="amount2">
+					</div>
+				</div>
+				<div class="filter">
+					<button class="accordion">Brand</button>
+					<div class="panel">
+					  <p>Lorem ipsum...</p>
+					</div>
+					<hr>
+					<button class="accordion">Screen Size</button>
+					<div class="panel">
+					  <p>Lorem ipsum...</p>
+					</div>
+					<hr>
+					<button class="accordion">Processor</button>
+					<div class="panel">
+					  <p>Lorem ipsum...</p>
+					</div>
+					<hr>
+					<button class="accordion">Graphics</button>
+					<div class="panel">
+					  <p>Lorem ipsum...</p>
+					</div>
+					<hr>
+					<button class="accordion">Features</button>
+					<div class="panel">
+					  <p>Lorem ipsum...</p>
+					</div>
+				</div>
+			</div>
+			<!--====  End of price range & filter list  ====-->
+
+			<div class="col-xl-9">
+				<div class="row">
+						<div class="col-xl-12">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product-placeholder">
+								<img src="images/products/Asus%20ROG%20GX800VH-7820HK-1-500x500.png">
+								<p>
+									Asus ROG
+									GX800VH-7820HK
+								</p>
+								<p><span class="from-price">From</span>630,000 ৳</p>
+								<button class="btn-prime">Compare</button>
+								<button class="btn-prime"><i class="fa fa-balance-scale"></i></button>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product-placeholder">
+								<img src="images/products/gaming%20laptop-500x500.png">
+								<p>
+									Asus G701VIK 17.3" 
+									Gaming Laptop
+								</p>
+								<p><span class="from-price">From</span>390,000 ৳</p>
+								<button class="btn-prime">Compare</button>
+								<button class="btn-prime"><i class="fa fa-balance-scale"></i></button>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product-placeholder">
+								<img src="images/products/p75-creator-9sf-1-500x500.png">
+								<p>
+									MSI P75 Creator 9SF
+									Gaming Laptop
+								</p>
+								<p><span class="from-price">From</span>375,000 ৳</p>
+								<button class="btn-prime">Compare</button>
+								<button class="btn-prime"><i class="fa fa-balance-scale"></i></button>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product-placeholder">
+								<img src="images/products/ge75-raider-9sg-01-500x500.png">
+								<p>
+									MSI GE75 Raider 9SG
+									Gaming Laptop
+								</p>
+								<p><span class="from-price">From</span>315,000 ৳</p>
+								<button class="btn-prime">Compare</button>
+								<button class="btn-prime"><i class="fa fa-balance-scale"></i></button>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product-placeholder">
+								<img src="images/products/razer-blade-pro-17-500x500.png">
+								<p>
+									Razer Blade Pro
+									Full HD Gaming Laptop
+								</p>
+								<p><span class="from-price">From</span>310,000 ৳</p>
+								<button class="btn-prime">Compare</button>
+								<button class="btn-prime"><i class="fa fa-balance-scale"></i></button>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+							<div class="product-placeholder">
+								<img src="images/products/asus_gx501-500x500.png">
+								<p>
+									Asus Rog Zephyrus Gaming Laptop
+								</p>
+								<p><span class="from-price">From</span>309,700 ৳</p>
+								<button class="btn-prime">Compare</button>
+								<button class="btn-prime"><i class="fa fa-balance-scale"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+	<!--============================
+	=            footer            =
+	=============================-->
+	<section class="container-fluid footer-top">
+		<div class="container">
+			<div class="col-xl-6 offset-xl-3">
+				<h2>Subscribe To Our Newsletter</h2>
+				<div class="newsletter">
+					<input type="text" name="newsletter" placeholder="Enter Your Email Address">
+					<button class="btn-prime"><i class="fa fa-paper-plane"></i></button>
+				</div>
+			</div>
+			<hr>
+			<div class="menu-links">
+				<ul>
+					<a href="#"><li>Desktop</li></a>
+					<a href="#"><li>Laptop</li></a>
+					<a href="#"><li>Camera</li></a>
+					<a href="#"><li>Monitor</li></a>
+					<a href="#"><li>Component</li></a>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="container-fluid footer-bottom">
+		<div class="container">
+			<div class="col-xl-6 offset-xl-3">
+				<div class="social-links">
+					<a href="#">
+						<div class="icon">
+							<i class="fa fa-facebook"></i>
+						</div>
+					</a>
+					<a href="#">
+						<div class="icon">
+							<i class="fa fa-skype"></i>
+						</div>
+					</a>
+					<a href="#">
+						<div class="icon">
+							<i class="fa fa-whatsapp"></i>
+						</div>
+					</a>
+					<a href="#">
+						<div class="icon">
+							<i class="fa fa-instagram"></i>
+						</div>
+					</a>
+				</div>
+				<div class="copyright">
+					<p>© 2020 Dordam All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</section>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script> <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/price-range.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script src="js/tabs.js"></script>
+<script type="text/javascript" src="js/sticky-nav.js"></script>
+<script type="text/javascript" src="js/accordion.js"></script>
+</body>
+</html>
+
+
+
+
