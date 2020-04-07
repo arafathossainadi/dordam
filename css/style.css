@@ -548,8 +548,21 @@ button{
 	.search, .search-button{
 		right: -10px;
 	}
-
-
+	.carousel-inner > .item > img{
+		max-width: unset;
+	}
+	.search-and-compare {
+	    transform: translate(-50%, -50%);
+	    top: 50%;
+	    left: 50%;
+	    text-align: center;
+	}
+	.carousel-indicators{
+		display: none;
+	}
+	.search-and-compare input{
+		text-align: center;
+	}
 }
 
 
