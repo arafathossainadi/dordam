@@ -626,5 +626,11 @@ button{
 		margin-left: unset;
 	}
 }
+
+@media only screen and (max-width: 414px){
+	.product-placeholder button:nth-child(4){
+		margin-left: 25%;
+	}
+}
 /*=====  End of responsive  ======*/
 
