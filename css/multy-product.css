@@ -3,8 +3,8 @@
 ==================================*/
 
 .breadcrumb {
-    height: 100px;
     margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .breadcrumb ul{
@@ -93,6 +93,7 @@
 
 .price-range-inputs{
 	margin-top: 15px;
+	clear: both;
 }
 
 .price-range-inputs input{
@@ -106,7 +107,7 @@
 }
 
 .price-range-inputs input:last-child{
-	margin-left: 30px;
+	float: right;
 }
 
 .ui-slider-horizontal {
@@ -251,5 +252,65 @@
 	padding: 5px 10px;
 }
 
+.showing-text-lgmdsm{
+	display: none;
+}
+
 /*=====  End of next-prev css  ======*/
 
+/**
+ *
+ * Responsive Css
+ *
+ */
+
+ @media only screen and (max-width: 1200px){
+ 	.product-placeholder button:nth-child(4){
+ 		padding: 10px 18px;
+ 	}
+
+ 	.price-range-inputs input{
+ 		width: 40%;
+ 	}
+ 	.showing-text-lgmdsm{
+ 		display: unset;
+ 		text-align: center;
+ 	}	
+ 	.showing-text-xl{
+ 		display: none;
+ 	}
+ 	.next-prev{
+ 		text-align: center;
+ 		margin-top: 15px;
+ 	}
+ }
+
+@media only screen and (max-width: 992px){
+	.product-placeholder button:nth-child(4){
+		clear: both;
+		padding: 10px 30px;
+		margin-right: unset;
+	}
+
+	.product-placeholder button:last-child{
+		float: right;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.show-sortby{
+		margin-top: 30px;
+	}
+
+	.product-placeholder button:nth-child(4){
+		margin-left: unset;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	.product-placeholder button:nth-child(4), .product-placeholder button:last-child{
+		width: 100%;
+		float: none;
+	}
+}

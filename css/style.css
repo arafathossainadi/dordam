@@ -568,7 +568,7 @@ button{
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px){
 	.product-placeholder button:nth-child(4){
 		margin-left: 18px;
 	}
@@ -615,6 +615,39 @@ button{
 
 	.search-button{
 		right: 15px;
+	}
+}
+
+@media only screen and (width: 768px){
+	.mobile-account-compare{
+		display: none;
+	}
+
+	.lgmd-account-compare{
+		display: block;
+	}
+
+	.account-compare-text{
+		display: inline-block;
+	}
+
+	.search, .search-button{
+		top:0;
+	}
+
+	.search-button{
+		right: 0;
+	}
+
+	.logo{
+		width: 100%;
+		margin-top: 5px;
+	}
+	.navigation{
+		padding: 0;
+	}
+	.navbar{
+		display: block;
 	}
 }
 
