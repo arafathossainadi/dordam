@@ -164,7 +164,7 @@
   transition: transform .2s ease-in-out;
 }
 
-.active:after {
+.accordion-active:after {
   content:"\f078";
     display: inline-block;
     -webkit-transform: rotate(180deg);
@@ -175,14 +175,81 @@
     transition: transform .2s ease-in-out;
 }
 
-.active, .accordion:hover {
+.accordion-active, .accordion:hover {
   background-color: #eee;
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: white;
+  padding: 0 30px;
+  background-color: #f7f8fa;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+.panel input{
+	margin-top: 15px;
+}
+
+.panel span{
+	margin-left: 10px;
+	color: #041054;
+}
+
+.panel div:last-child input{
+	margin-bottom: 15px;
+}
+
+/*=====  End of price range css & filter   ======*/
+
+/*==========================================
+=            show & sort by css            =
+==========================================*/
+.show-sortby{
+	display: inline-block;
+}
+
+.show-sortby label{
+	font-weight: 700;
+	color: #041054;
+}
+
+.show-sortby select{
+	padding: 5px;
+	background: #fff;
+	border-radius: 5px;
+	margin-left: 5px;
+	border: none;
+	box-shadow: 0 2px 3px 0px #0000004d;
+	color: #041054;
+}
+
+
+/*=====  End of show & sort by css  ======*/
+
+/*=====================================
+=            next-prev css            =
+=====================================*/
+.btn-number{
+	font-weight: 700;
+	margin: 0px 5px;
+	padding: 7px 10px;
+	border: none;
+	background-color: #fff;
+	box-shadow: 0 0 5px 0px #0000004d;
+	border-radius: 5px;
+	color: #041054;
+	cursor: pointer;
+	transition: 0.3s all ease-in-out;
+}
+
+.btn-active , .btn-number:hover{
+	background-color: #041054;
+	color: white;
+}
+.next-prev .btn-prime{
+	padding: 5px 10px;
+}
+
+/*=====  End of next-prev css  ======*/
+

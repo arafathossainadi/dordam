@@ -97,26 +97,30 @@
   content: "\f007";
 }
 
-.fa-balance-scale::before{
+.fa-balance-scale:before{
   content: "\f24e";
 }
 
-.fa-paper-plane::before{
+.fa-paper-plane:before{
   content: "\f1d8"
 }
 
-.fa-whatsapp::before{
+.fa-whatsapp:before{
   content: "\f232";
 }
 
-.fa-skype::before{
+.fa-skype:before{
   content: "\f17e";
 }
 
-.fa-chevron-right::before{
+.fa-chevron-right:before{
   content: "\f054";
 }
 
-.fa-chevron-down{
+.fa-chevron-down:before{
   content: "\f078";
+}
+
+.fa-chevron-left:before{
+  content: "\f053";
 }

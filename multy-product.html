@@ -166,27 +166,61 @@
 				<div class="filter">
 					<button class="accordion">Brand</button>
 					<div class="panel">
-					  <p>Lorem ipsum...</p>
+						<div>
+							<input type="checkbox" name=""><span>Asus</span>
+						</div>
+						<div>
+							<input type="checkbox" name=""><span>MSI</span>
+						</div>
+						<div>
+							<input type="checkbox" name=""><span>Razer</span>
+						</div>
+						<div>
+							<input type="checkbox" name=""><span>Dell</span>
+						</div>
+						<div>
+							<input type="checkbox" name=""><span>HP</span>
+						</div>  
 					</div>
 					<hr>
 					<button class="accordion">Screen Size</button>
 					<div class="panel">
-					  <p>Lorem ipsum...</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 					<hr>
 					<button class="accordion">Processor</button>
 					<div class="panel">
-					  <p>Lorem ipsum...</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 					<hr>
 					<button class="accordion">Graphics</button>
 					<div class="panel">
-					  <p>Lorem ipsum...</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 					<hr>
 					<button class="accordion">Features</button>
 					<div class="panel">
-					  <p>Lorem ipsum...</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 				</div>
 			</div>
@@ -195,12 +229,30 @@
 			<div class="col-xl-9">
 				<div class="row">
 						<div class="col-xl-12">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<div class="show-sortby">
+								<label>Show:</label>
+								<select>
+									<option>20</option>
+									<option>40</option>
+									<option>60</option>
+									<option>80</option>
+									<option>100</option>
+								</select>
+							</div>
+							<div class="show-sortby" style="float: right;">
+								<label>Sort By:</label>
+								<select>
+									<option>Default</option>
+									<option>Name (A - Z)</option>
+									<option>Name (Z - A)</option>
+									<option>Price (Low &gt; High)</option>
+									<option>Price (High &gt; Low)</option>
+									<option>Rating (Highest)</option>
+									<option>Rating (Lowest)</option>
+									<option>Model (A - Z)</option>
+									<option>Model (Z - A)</option>
+								</select>
+							</div>
 						</div>
 						<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
 							<div class="product-placeholder">
@@ -273,6 +325,24 @@
 								<button class="btn-prime"><i class="fa fa-balance-scale"></i></button>
 							</div>
 						</div>
+						<div class="col-xl-12">
+							<hr style="margin-top: 30px;">
+							<div class="row" style="margin-top: 5px;">
+								<div class="col-xl-6 next-prev" id="NextPrev">
+									<button class="btn-prime"><span style="margin-right: 5px;"><i class="fa fa-chevron-left"></i></span>PREV</button>
+									<button class="btn-number btn-active">1</button>
+									<button class="btn-number">2</button>
+									<button class="btn-number">3</button>
+									<button class="btn-number">4</button>
+									<button class="btn-number">5</button>
+									<button class="btn-prime">NEXT<span style="margin-left: 5px;"><i class="fa fa-chevron-right"></i></span></button>
+
+								</div>
+								<div class="col-xl-6">
+									<strong style="float: right; color:#041054;">SHOWING 1 TO 20 OF 807 (39 PAGES)</strong>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 		</div>
@@ -337,6 +407,7 @@
 <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
 <script type="text/javascript" src="js/carousel.js"></script>
 <script src="js/tabs.js"></script>
+<script type="text/javascript" src="js/button-active.js"></script>
 <script type="text/javascript" src="js/sticky-nav.js"></script>
 <script type="text/javascript" src="js/accordion.js"></script>
 </body>
