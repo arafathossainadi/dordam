@@ -231,10 +231,236 @@
 	border-radius: 5px;
 	cursor: pointer;
 }
-
 /*=====  End of spec dest review tab css  ======*/
 
+/*=================================================
+=            specification section css            =
+=================================================*/
 
+#Specifiation{
+	scroll-margin-top: 100px;
+}
 
+.section-content{
+	padding: 15px;
+}
 
+.section-content h3{
+	font-weight: 700;
+	font-family: "Lato", "sans-serif";
+	color: #041054;
+}
 
+.section-content hr{
+    background-color: #041054;
+    border: none;
+    height: 1px;
+    margin-top: 5px;
+}
+
+.section-content table{
+	width: 100%;
+	color: #041054;
+	margin-top: 5px;
+}
+
+.product-component-name{
+	width: 20%;
+	background-color: #e9e9e9;
+	padding: 10px 0;
+	text-align: right;
+	padding-right: 10px;
+	border-right: 1px solid #00000038;
+	border-bottom: 1px solid #00000038;
+}
+
+.product-component-value{
+	width: 80%;
+	padding: 10px 0;
+	padding-left: 10px;
+	background-color: #f7f8fa;
+	border-bottom: 1px solid #00000038;
+}
+
+.section-content tr:last-child .product-component-name, .section-content tr:last-child .product-component-value{
+	border-bottom: unset;
+}
+
+/*=====  End of specification section css  ======*/
+
+/*=======================================
+=            description css            =
+=======================================*/
+
+#Description{
+	color: #041054;
+	scroll-margin-top: 100px;
+}
+
+#Description h2{
+	font-family: "Lato","sans-serif";
+}
+
+#Description p{
+	margin-top: 10px;
+	text-align: justify;
+	line-height: 24px;
+}
+
+/*=====  End of description css  ======*/
+
+/*==================================
+=            Reveiw css            =
+==================================*/
+
+#Reveiws{
+	color: #041054;
+	scroll-margin-top: 100px;
+}
+
+#Reveiws .section-content ul{
+	list-style-type: none;
+	display: inline-block;
+	padding: 5px 0;
+}
+
+#Reveiws .section-content li{
+	display: inline;
+	color: #ff9c00;
+}
+
+#Reveiws .section-content ul+p{
+	margin-top: 10px;
+}
+
+#Reveiws .section-content p+hr{
+	margin: 15px 0;
+}
+
+.btn-number{
+	font-weight: 700;
+	margin: 0px 5px;
+	padding: 7px 10px;
+	border: none;
+	background-color: #fff;
+	box-shadow: 0 0 5px 0px #0000004d;
+	border-radius: 5px;
+	color: #041054;
+	cursor: pointer;
+	transition: 0.3s all ease-in-out;
+}
+
+.btn-active , .btn-number:hover{
+	background-color: #041054;
+	color: white;
+}
+.next-prev .btn-prime{
+	padding: 5px 10px;
+}
+
+.showing-text-lgmdsm{
+	display: none;
+}
+/*=====  End of Reveiw css  ======*/
+
+/*=======================================
+=            user review css            =
+=======================================*/
+
+.user-review-form input{
+	width: 100%;
+	background-color: #f1f1f1;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+.user-review-form textarea{
+	border: none;
+	background-color: #f1f1f1;
+	height: 150px;
+	resize: none;
+	width: 100%;
+	margin-top: 15px;
+	border-radius: 5px;
+	padding: 10px;
+	font-family: "Lato", "sans-serif";
+}
+
+.user-review-form textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.user-review-form textarea::-webkit-scrollbar-track {
+  background: #dddddd;
+  border-radius: 5px;
+}
+
+.user-review-form textarea::-webkit-scrollbar-thumb {
+  background: #041054;
+  border-radius: 10px;
+}
+
+.user-review-form textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  cursor: pointer;
+}
+
+/*----------  Dynamic Rating css  ----------*/
+
+fieldset, label { margin: 0; padding: 0; }
+
+.rating-input-btn{
+	color: #041054;
+	margin-top: 15px;
+}
+
+.rating-input-btn p{
+	display: inline-block;
+	float: left;
+	line-height: 27px;
+	font-size: 18px;
+	margin-top: 1px;
+}
+
+.rating { 
+  border: none;
+  float: left;
+  margin-left: 10px;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label { color: #ff9c00;  }
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label { color: #ff9c0080;  }
+
+.rating-input-btn .btn-prime{
+	float: right;
+	font-size: 18px;
+	padding: 10px 20px;
+}
+
+/*=====  End of user review css  ======*/
