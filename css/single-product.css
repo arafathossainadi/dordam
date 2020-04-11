@@ -1,0 +1,240 @@
+.product-img-info, .available-shops{
+	background-color: #fff;
+	box-shadow: 0 0 5px 0px #0000004d;
+	margin-top: 30px;
+	border-radius: 10px;
+}
+
+/*============================================
+=            xZoom overridden css            =
+============================================*/
+
+.xzoom2, .xzoom3, .xzoom4, .xzoom5 {
+     -webkit-box-shadow: unset; 
+    -moz-box-shadow: unset;
+     box-shadow: unset; 
+    margin: 25% 0;
+}
+
+.xzoom-gallery5 {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ .xzoom-thumbs a:first-child .xzoom-gallery5{
+	margin-left: unset;
+}
+
+.xzoom-thumbs{
+	margin-top: 15px;
+}
+
+.xactive {
+    -webkit-box-shadow: 0px 0px 3px 0px rgb(4, 16, 84);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);
+    box-shadow: 0px 0px 3px 0px rgb(4, 16, 84);
+    border: 1px solid #041054;
+}
+/*=====  End of xZoom overridden css  ======*/
+
+/*========================================
+=            product info & image css
+========================================*/
+
+.product-info{
+	padding: 15px 30px 15px 0;
+}
+
+.product-info-header h1{
+	color: #041054;
+}
+
+.product-info-header .fa-star, .product-info .fa-star{
+	color: #ff9c00;
+}
+
+.product-info-header > ul{
+	list-style-type: none;
+	border-right: 1px solid;
+	display: inline-block;
+	padding: 5px 0;
+}
+
+.product-info-header > ul > li, .product-info > ul > li{
+	display: inline;
+	margin-left: 5px;
+}
+
+.product-info-header > ul > li:first-child, .product-info > ul > li:first-child{
+	margin-left: unset;
+}
+
+.product-info-header > ul > li:last-child{
+	margin-right: 10px;
+}
+
+.product-info-header > ul + a{
+	margin-left: 10px;
+}
+
+.product-price{
+	background-color: #041054;
+	text-align: white;
+	color: white;
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.product-features{
+	margin-top: 15px;
+}
+
+.product-features p{
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+.product-features > ul > li{
+	line-height: 25px;
+	color: #041054;
+	list-style: inside;
+}
+
+.product-features + a{
+	display: inline-block;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-weight: 700;
+	color:#041054;
+}
+
+.product-info-btn{
+	margin-top: 15px;
+}
+
+.product-info-btn button{
+	padding: 15PX;
+	width: 100%;
+	font-size: 20px;
+}
+
+.product-info-btn button:last-child{
+	margin-top: 15px;
+}
+
+/*=====  End of product info & image css  ======*/
+
+/*===========================================
+=            available shops css            =
+===========================================*/
+
+.available-shops{
+	overflow: hidden;
+}
+
+.section-header{
+	background-color: #eaeaea;
+	text-align: center;
+	color: #041054;
+	padding: 7px;
+}
+
+.available-shops .container{
+	height: 552px;
+	max-height: 100%;
+	overflow: auto;
+}
+
+.available-shops .container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.available-shops .container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.available-shops .container::-webkit-scrollbar-thumb {
+  background: #041054;
+  border-radius: 100px;
+}
+
+.available-shops .container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.section-header h2{
+	font-family: 'Lato', sans-serif;
+}
+
+.shop-info{
+	padding: 15px 0;
+	border-bottom: 1px solid #041054;
+}
+
+.shop-info img{
+	padding: 30% 0;
+}
+
+.shop-info h3, .shop-info h4{
+	font-family: 'Lato', sans-serif;
+	color: #041054;
+}
+
+.shop-info p{
+	margin-top: 3px;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+.shop-info hr{
+	margin-bottom: 5px;
+}
+
+.shop-info hr+h2{
+	margin-top: 4px;
+	font-family: 'Lato', sans-serif;
+	color:#041054;
+	display: inline-block;
+}
+
+.shop-info button{
+	padding: 10px 20px;
+	font-size: 14px;
+	float: right;
+}
+
+.shop-info:last-child{
+	border-bottom: unset;
+}
+/*=====  End of available shops css  ======*/
+
+/*================================================
+=            spec dest review tab css            =
+================================================*/
+
+.single-product-tab-btn{
+	font-size: 20px;
+	padding: 10px;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	color: #041054;
+	transition: 0.2s all ease-in-out;
+}
+
+.single-product-tab-btn:hover{
+	background-color: #041054;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/*=====  End of spec dest review tab css  ======*/
+
+
+
+
+
