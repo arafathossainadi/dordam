@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
 	background-color: #f7f8fa;
 	font-family: 'Lato', sans-serif;
@@ -40,6 +44,14 @@ button{
 	font-family: 'Open Sans', sans-serif;
 }
 
+.section-placeholder{
+	background-color: #fff;
+	padding: 15px;
+	box-shadow: 0 0 5px 0px #0000004d;
+	margin-top: 30px;
+	border-radius: 10px;
+}
+
 .btn-prime{
 	background-color: #041054;
 	color: white;
@@ -56,6 +68,12 @@ button{
 	border: 2px solid #041054;
 	border-radius: 5px;
 	cursor: pointer;
+}
+
+.img-responsive{
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 /*=====  End of universal css  ======*/
 
@@ -148,13 +166,13 @@ button{
   background-color: transparent;
 }
 
-.navbar a {
+/*.navbar a {
   float: left;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
+}*/
 
 .dropdown {
   float: left;
