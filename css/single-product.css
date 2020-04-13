@@ -238,7 +238,7 @@
 =================================================*/
 
 #Specifiation{
-	scroll-margin-top: 100px;
+	scroll-margin-top: -500px;
 }
 
 .section-content{
@@ -464,3 +464,139 @@ fieldset, label { margin: 0; padding: 0; }
 }
 
 /*=====  End of user review css  ======*/
+
+/*============================================
+=            related products css            =
+============================================*/
+
+.related-products{
+	padding: 30px;
+	padding-bottom: 10px;
+}
+
+.related-products img,.related-products p{
+	transition: 0.2s;
+}
+
+.related-products:hover img, .related-products:hover p{
+	transform: scale(1.05);
+	cursor: pointer;
+	font-weight: bold;
+}
+.related-products p{
+	margin-top: 15px;
+	text-align: center;
+	color: #041054;
+}
+
+.related-products p+p{
+	font-weight: bold;
+}
+
+.related-product-hr{
+    border: none;
+    height: 1px;
+    background-color: #041053;
+    width: 100%;
+}
+
+.relatedproduct{
+	overflow: hidden;
+	border-bottom: 1px solid #041053;
+}
+.relatedproduct:last-child{
+	border-bottom:unset;
+}
+
+/*=====  End of related products css  ======*/
+
+/**
+ *
+ * Responsive Css
+ *
+ */
+
+@media only screen and (max-width: 1200px){
+	#magnific hr{
+		margin-right: -90px !important;
+		margin-left: -25% !important;
+	}
+
+	.shop-info img{
+		padding: 0;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 992px){
+	#magnific hr{
+		margin-right: -30px !important;
+		margin-left: -5% !important;
+	}
+
+	.shop-info img{
+		padding: 0;
+		display: block;
+		margin: 0 auto;
+	}
+	.relatedproduct{
+		overflow: hidden;
+		border-bottom: 1px solid #041053;
+		border-right: 1px solid #041053;
+	}
+	.relatedproduct:nth-last-child(3),.relatedproduct:nth-last-child(2){
+		border-bottom:unset;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.product-img-info > .row > .col-md-6{
+		border-right: unset !important;
+	}
+	.product-info{
+		padding: 15px 30px 15px;
+	}
+	.shop-info img{
+		width: 144px;
+	}
+	.shop-info h3, .shop-info h4{
+		margin-top: 15px;
+	}
+	.shop-info div+div h3, .shop-info div+div h3+p{
+		text-align: center;
+	}
+	#magnific hr{
+		margin-right: -105px !important;
+		margin-left: -105px !important;
+	}
+
+	.shop-info img{
+		padding: 0;
+		display: block;
+		margin: 0 auto;
+	}
+	.showing-text-lgmdsm{
+ 		display: unset;
+ 		text-align: center;
+ 	}
+ 	.next-prev{
+ 		text-align: center;
+ 		margin-top: 15px;
+ 	}
+ 	.showing-text-xl{
+ 		display: none;
+ 	}
+ 	.user-email{
+ 		margin-top: 15px;
+ 	}
+ 	.relatedproduct:nth-last-child(3){
+ 		border-bottom: 1px solid #041053;
+ 	}
+}
+
+@media only screen and (max-width: 576px){
+	#magnific{
+		overflow: hidden;
+	}
+}
