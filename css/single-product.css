@@ -40,6 +40,10 @@
 /*========================================
 =            product info & image css
 ========================================*/
+.product-image{
+	border-right: 1px solid #041053;
+	overflow: hidden;
+}
 
 .product-info{
 	padding: 15px 30px 15px 0;
@@ -552,7 +556,7 @@ fieldset, label { margin: 0; padding: 0; }
 
 @media only screen and (max-width: 768px){
 	.product-img-info > .row > .col-md-6{
-		border-right: unset !important;
+		border-right: unset;
 	}
 	.product-info{
 		padding: 15px 30px 15px;
@@ -593,6 +597,41 @@ fieldset, label { margin: 0; padding: 0; }
  	.relatedproduct:nth-last-child(3){
  		border-bottom: 1px solid #041053;
  	}
+}
+
+@media only screen and (width: 768px){
+	.product-placeholder button:nth-child(4){
+		margin-left: unset;
+	}
+	.product-info{
+		padding: 15px;
+	}
+	.product-image{
+		border-right: 1px solid #041053 !important;
+	}
+	#magnific hr {
+	    margin-right: -105px !important;
+	    margin-left: -15px !important;
+	}
+	.shop-info div+div h3, .shop-info div+div h3+p{
+		text-align: unset;
+	}
+	.showing-text-lgmdsm{
+		display: none;
+	}
+	.next-prev{
+		text-align: unset;
+		margin-top: 0;
+	}
+	.showing-text-xl{
+		display: block;
+	}
+	.user-email{
+		margin-top: 0;
+	}
+	.relatedproduct:nth-last-child(3), .relatedproduct:nth-last-child(3){
+		border-bottom: unset;
+	}
 }
 
 @media only screen and (max-width: 576px){

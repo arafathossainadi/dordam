@@ -716,8 +716,8 @@ button{
 
 	.sticky {
 	  position: unset;
-	  top: unset;
-	  width: unset;
+	  top: 0;
+	  width: 100%
 	}
 
 	.mobile-sticky {
@@ -811,6 +811,12 @@ button{
 }
 
 @media only screen and (width: 768px){
+	.mobile-menu{
+		display: none;
+	}
+	.dropdown{
+		display: unset;
+	}
 	.mobile-account-compare{
 		display: none;
 	}
@@ -840,6 +846,20 @@ button{
 	}
 	.navbar{
 		display: block;
+	}
+	.sticky{
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	.mobile-sticky {
+	  position: unset;
+	  top: unset;
+	  width: unset;
+	  z-index: unset;
+	}
+	.product-placeholder button:nth-child(4){
+		margin-left: unset;
 	}
 }
 
