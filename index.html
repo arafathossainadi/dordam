@@ -20,8 +20,8 @@
 					<div class="col-sm-4 col-4 mobile-menu">
 						<div id="MenuContent" class="sidenav">
 						  <div class="menu-placeholder">
-						  	<button class="accordion">Laptop</button>
-						  	<div class="panel">
+						  	<button class="menu-accordion">Laptop</button>
+						  	<div class="menu-panel">
 						  		<a href=""><span>Asus</span></a>
 						  		<a href=""><span>MSI</span></a>
 						  		<a href=""><span>Razer</span></a>
@@ -29,13 +29,20 @@
 						  		<a href=""><span>HP</span></a>  
 						  	</div>
 						  	<hr>
-						  	<button class="accordion">Desktop</button>
-						  	<div class="panel">
+						  	<button class="menu-accordion">Desktop</button>
+						  	<div class="menu-panel">
 						  		<a href=""><span>Asus</span></a>
 						  		<a href=""><span>MSI</span></a>
 						  		<a href=""><span>Razer</span></a>
 						  		<a href=""><span>Dell</span></a>
 						  		<a href=""><span>HP</span></a>  
+						 	</div>
+						  	<hr>
+						  	<button class="menu-accordion">Pages</button>
+						  	<div class="menu-panel">
+						  		<a href="index.html">Home</a>
+						  		<a href="multy-product.html">Multiple Product Page</a>
+						  		<a href="single-product.html">Single Product Page</a>
 						 	</div>
 						  	<hr>						  
 						  </div>
@@ -609,24 +616,8 @@
 <script src="js/tabs.js"></script>
 <script type="text/javascript" src="js/sticky-nav.js"></script>
 <script type="text/javascript" src="js/accordion.js"></script>
-<script>
-function menuToggler(x) {
-  x.classList.toggle("change");
-  var element = document.getElementById("MenuContent");
-     element.classList.toggle("menu-style");
-  var overlay = document.getElementById("olay");
-  	overlay.classList.toggle("menu-overlay");
-}
-
-function closeNav() {
-	var item = document.getElementById("MenuContent");
-	   item.classList.toggle("menu-style");
-	var item2 = document.getElementById("olay");
-  	item2.classList.toggle("menu-overlay");
-  	var item3 = document.getElementById("menuBars");
-  	item3.classList.toggle("change");
-}
-</script>
+<script type="text/javascript" src="js/menu-accordion.js"></script>
+<script src="js/mobile-menu.js"></script>
 </body>
 </html>
 

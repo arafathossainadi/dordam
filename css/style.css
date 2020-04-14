@@ -232,11 +232,12 @@ button{
  }
 
  .sidenav a {
-   padding: 8px 8px 8px 15px;
-   text-decoration: none;
-   color: #818181;
-   display: block;
-   transition: 0.3s;
+ 	padding: 7px 0;
+ 	text-decoration: none;
+ 	color: #041054;
+ 	display: block;
+ 	transition: 0.3s;
+ 	font-weight: bold;
  }
 
  .sidenav a:hover {
@@ -747,7 +748,7 @@ button{
 	}
 
 
-	.accordion {
+	.menu-accordion {
 		background-color: #F7F8FA;
 		color: #041054;
 		cursor: pointer;
@@ -761,7 +762,7 @@ button{
 		transition: 0.4s;
 	}
 
-	.accordion:after {
+	.menu-accordion:after {
 	  content: "\f078";
 	  font-size: 16px;
 	  font-family: "FontAwesome";
@@ -771,7 +772,7 @@ button{
 	  transition: transform .2s ease-in-out;
 	}
 
-	.accordion-active:after {
+	.menu-accordion-active:after {
 	  content:"\f078";
 	    display: inline-block;
 	    -webkit-transform: rotate(180deg);
@@ -782,11 +783,11 @@ button{
 	    transition: transform .2s ease-in-out;
 	}
 
-	.accordion-active, .accordion:hover {
+	.menu-accordion-active, .menu-accordion:hover {
 	  background-color: #eee;
 	}
 
-	.panel {
+	.menu-panel {
 	  padding: 0 30px;
 	  background-color: #fff;
 	  max-height: 0;
@@ -794,17 +795,17 @@ button{
 	  transition: max-height 0.2s ease-out;
 	}
 
-	.panel input{
+	.menu-panel input{
 		margin-top: 15px;
 	}
 
-	.panel span{
+	.menu-panel span{
 		margin-left: 10px;
 		color: #041054;
 		font-weight: bold;
 	}
 
-	.panel div:last-child input{
+	.menu-panel div:last-child input{
 		margin-bottom: 15px;
 	}
 }
