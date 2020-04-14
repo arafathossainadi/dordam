@@ -10,131 +10,162 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
 	<!--============================
 	=            header            =
 	=============================-->
-	<section class="container-fluid header" style="border-bottom: 1px solid #000000">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6"><a href="index.html"><img src="images/logo.png" class="logo"></a></div>
-				<div class="col-sm-6 col-6 mobile-account-compare">
-					<div class="account-compare">
-						<div class="account-compare-icon">
-							<i class="fa fa-balance-scale header-icon"></i>
-						</div>
-						<div class="account-compare-text">
-							<p style="color:#041054"><strong>Compare</strong></p>
-							<p style="color: #0000007a"><a href="#">0(Items)</a></p>
-						</div>
-					</div>
-					<div class="account-compare" style="margin-right: 15px;">
-						<div class="account-compare-icon">
-							<i class="fa fa-user header-icon"></i>
-						</div>
-						<div class="account-compare-text">
-							<p style="color:#041054"><strong>Account</strong></p>
-							<p style="color: #0000007a"><a href="#">Sign In</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-6 col-lg-6 col-md-5 col-sm-12" style="position: relative;">
-					<input type="text" name="search" placeholder="Search Your Desired Product here" class="search">
-					<button class="search-button"><i class="fa fa-search"></i></button>
-				</div>
-				<div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 lgmd-account-compare">
-					<div class="account-compare">
-						<div class="account-compare-icon">
-							<i class="fa fa-balance-scale header-icon"></i>
-						</div>
-						<div class="account-compare-text">
-							<p style="color:#041054"><strong>Compare</strong></p>
-							<p style="color: #0000007a"><a href="#">0(Items)</a></p>
-						</div>
-					</div>
-					<div class="account-compare" style="margin-right: 15px;">
-						<div class="account-compare-icon">
-							<i class="fa fa-user header-icon"></i>
-						</div>
-						<div class="account-compare-text">
-							<p style="color:#041054"><strong>Account</strong></p>
-							<p style="color: #0000007a"><a href="#">Sign In</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!--================================
-	=            navigation            =
-	=================================-->
-	<div id="myHeader">
-		<section class="container-fluid navigation">
+	<section id="mobileHeader">
+		<section  class="container-fluid header" style="border-bottom: 1px solid #000000">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-12">
-						<div class="navbar">
-						  <div class="dropdown" style="margin-left: unset;">
-						    <button class="dropbtn">Desktop
-						    </button>
-						    <div class="dropdown-content">
-						      <a href="#">Link 1</a>
-						      <a href="#">Link 2</a>
-						      <a href="#">Link 3</a>
-						    </div>
+					<div class="col-sm-4 col-4 mobile-menu">
+						<div id="MenuContent" class="sidenav">
+						  <div class="menu-placeholder">
+						  	<button class="accordion">Laptop</button>
+						  	<div class="panel">
+						  		<a href=""><span>Asus</span></a>
+						  		<a href=""><span>MSI</span></a>
+						  		<a href=""><span>Razer</span></a>
+						  		<a href=""><span>Dell</span></a>
+						  		<a href=""><span>HP</span></a>  
+						  	</div>
+						  	<hr>
+						  	<button class="accordion">Desktop</button>
+						  	<div class="panel">
+						  		<a href=""><span>Asus</span></a>
+						  		<a href=""><span>MSI</span></a>
+						  		<a href=""><span>Razer</span></a>
+						  		<a href=""><span>Dell</span></a>
+						  		<a href=""><span>HP</span></a>  
+						 	</div>
+						  	<hr>						  
 						  </div>
-						  <div class="dropdown">
-						    <button class="dropbtn">Laptop
-						    </button>
-						    <div class="dropdown-content">
-						      <a href="#">Link 1</a>
-						      <a href="#">Link 2</a>
-						      <a href="#">Link 3</a>
-						    </div>
-						  </div>
-						  <div class="dropdown">
-						    <button class="dropbtn">Camera
-						    </button>
-						    <div class="dropdown-content">
-						      <a href="#">Link 1</a>
-						      <a href="#">Link 2</a>
-						      <a href="#">Link 3</a>
-						    </div>
-						  </div>
-						  <div class="dropdown">
-						    <button class="dropbtn">Monitor
-						    </button>
-						    <div class="dropdown-content">
-						      <a href="#">Link 1</a>
-						      <a href="#">Link 2</a>
-						      <a href="#">Link 3</a>
-						    </div>
-						  </div>
-						  <div class="dropdown">
-						    <button class="dropbtn">Component
-						    </button>
-						    <div class="dropdown-content">
-						      <a href="#">Link 1</a>
-						      <a href="#">Link 2</a>
-						      <a href="#">Link 3</a>
-						    </div>
-						  </div>
-						  <div class="dropdown">
-						    <button class="dropbtn">Pages
-						    </button>
-						    <div class="dropdown-content">
-						      <a href="index.html">Home</a>
-						      <a href="multy-product.html">Multiple Product Page</a>
-						      <a href="single-product.html">Single Product Page</a>
-						    </div>
-						  </div>
+						</div>
+						<div id="menuBars" class="menu-bars" onclick="menuToggler(this)">
+						  <div class="bar1"></div>
+						  <div class="bar2"></div>
+						  <div class="bar3"></div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4"><a href="index.html"><img src="images/logo.png" class="logo"></a></div>
+					<div class="col-sm-4 col-4 mobile-account-compare">
+						<div class="account-compare">
+							<div class="account-compare-icon">
+								<i class="fa fa-balance-scale header-icon"></i>
+							</div>
+							<div class="account-compare-text">
+								<p style="color:#041054"><strong>Compare</strong></p>
+								<p style="color: #0000007a"><a href="#">0(Items)</a></p>
+							</div>
+						</div>
+						<div class="account-compare" style="margin-right: 15px;">
+							<div class="account-compare-icon">
+								<i class="fa fa-user header-icon"></i>
+							</div>
+							<div class="account-compare-text">
+								<p style="color:#041054"><strong>Account</strong></p>
+								<p style="color: #0000007a"><a href="#">Sign In</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-5 col-sm-12" style="position: relative;">
+						<input type="text" name="search" placeholder="Search Your Desired Product here" class="search">
+						<button class="search-button"><i class="fa fa-search"></i></button>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 lgmd-account-compare">
+						<div class="account-compare">
+							<div class="account-compare-icon">
+								<i class="fa fa-balance-scale header-icon"></i>
+							</div>
+							<div class="account-compare-text">
+								<p style="color:#041054"><strong>Compare</strong></p>
+								<p style="color: #0000007a"><a href="#">0(Items)</a></p>
+							</div>
+						</div>
+						<div class="account-compare" style="margin-right: 15px;">
+							<div class="account-compare-icon">
+								<i class="fa fa-user header-icon"></i>
+							</div>
+							<div class="account-compare-text">
+								<p style="color:#041054"><strong>Account</strong></p>
+								<p style="color: #0000007a"><a href="#">Sign In</a></p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-	</div>
+		
+		<!--================================
+		=            navigation            =
+		=================================-->
+		<div id="myHeader">
+			<section class="container-fluid navigation">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="navbar" id="navBar">
+							  <div class="dropdown" style="margin-left: unset;">
+							    <button class="dropbtn">Desktop
+							    </button>
+							    <div class="dropdown-content">
+							      <a href="#">Link 1</a>
+							      <a href="#">Link 2</a>
+							      <a href="#">Link 3</a>
+							    </div>
+							  </div>
+							  <div class="dropdown">
+							    <button class="dropbtn">Laptop
+							    </button>
+							    <div class="dropdown-content">
+							      <a href="#">Link 1</a>
+							      <a href="#">Link 2</a>
+							      <a href="#">Link 3</a>
+							    </div>
+							  </div>
+							  <div class="dropdown">
+							    <button class="dropbtn">Camera
+							    </button>
+							    <div class="dropdown-content">
+							      <a href="#">Link 1</a>
+							      <a href="#">Link 2</a>
+							      <a href="#">Link 3</a>
+							    </div>
+							  </div>
+							  <div class="dropdown">
+							    <button class="dropbtn">Monitor
+							    </button>
+							    <div class="dropdown-content">
+							      <a href="#">Link 1</a>
+							      <a href="#">Link 2</a>
+							      <a href="#">Link 3</a>
+							    </div>
+							  </div>
+							  <div class="dropdown">
+							    <button class="dropbtn">Component
+							    </button>
+							    <div class="dropdown-content">
+							      <a href="#">Link 1</a>
+							      <a href="#">Link 2</a>
+							      <a href="#">Link 3</a>
+							    </div>
+							  </div>
+							  <div class="dropdown">
+							    <button class="dropbtn">Pages
+							    </button>
+							    <div class="dropdown-content">
+							      <a href="index.html">Home</a>
+							      <a href="multy-product.html">Multiple Product Page</a>
+							      <a href="single-product.html">Single Product Page</a>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<div id="olay" onclick="closeNav()"></div>
 	<!--============================
 	=            banner            =
 	=============================-->
@@ -577,6 +608,25 @@
 <script type="text/javascript" src="js/carousel.js"></script>
 <script src="js/tabs.js"></script>
 <script type="text/javascript" src="js/sticky-nav.js"></script>
+<script type="text/javascript" src="js/accordion.js"></script>
+<script>
+function menuToggler(x) {
+  x.classList.toggle("change");
+  var element = document.getElementById("MenuContent");
+     element.classList.toggle("menu-style");
+  var overlay = document.getElementById("olay");
+  	overlay.classList.toggle("menu-overlay");
+}
+
+function closeNav() {
+	var item = document.getElementById("MenuContent");
+	   item.classList.toggle("menu-style");
+	var item2 = document.getElementById("olay");
+  	item2.classList.toggle("menu-overlay");
+  	var item3 = document.getElementById("menuBars");
+  	item3.classList.toggle("change");
+}
+</script>
 </body>
 </html>
 
