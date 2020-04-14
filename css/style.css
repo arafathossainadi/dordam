@@ -495,14 +495,16 @@ button{
 }
 
 .product-placeholder button:nth-child(4){
-	padding: 10px 20px;
+    padding: 10px 20px;
     margin-top: 10px;
-    margin-right: 10px;
+    clear: both;
 }
 
 .product-placeholder button:last-child{
 	width: 42px;
-	height: 42px;
+    height: 42px;
+    float: right;
+    margin-top: 10px;
 }
 
 .product-placeholder p:nth-child(3){
