@@ -50,7 +50,10 @@
 }
 
 .product-info-header h1{
+	font-family: lato;
+	font-size: 25px;
 	color: #041054;
+	font-weight: normal;
 }
 
 .product-info-header .fa-star, .product-info .fa-star{
@@ -85,7 +88,7 @@
 	background-color: #041054;
 	text-align: white;
 	color: white;
-	padding: 10px 20px;
+	padding: 6px 12px;
 	font-size: 20px;
 	border-radius: 5px;
 	margin-top: 10px;
@@ -120,7 +123,7 @@
 }
 
 .product-info-btn button{
-	padding: 15PX;
+	padding: 10px;
 	width: 100%;
 	font-size: 20px;
 }
@@ -171,6 +174,7 @@
 
 .section-header h2{
 	font-family: 'Lato', sans-serif;
+	font-size: 20px;
 }
 
 .shop-info{
@@ -202,10 +206,11 @@
 	font-family: 'Lato', sans-serif;
 	color:#041054;
 	display: inline-block;
+	font-size: 20px;
 }
 
 .shop-info button{
-	padding: 10px 20px;
+	padding: 6px 12px;
 	font-size: 14px;
 	float: right;
 }
@@ -220,7 +225,7 @@
 ================================================*/
 
 .single-product-tab-btn{
-	font-size: 20px;
+	font-size: 16px;
 	padding: 10px;
 	width: 100%;
 	background-color: transparent;

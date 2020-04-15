@@ -397,7 +397,7 @@ button{
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	font-size: 24px;
+	font-size: 16px;
 }
 
 .tab-btn-active{
@@ -494,21 +494,25 @@ button{
 	color: #041054;
 }
 
-.product-placeholder button:nth-child(4){
-    padding: 10px 20px;
-    margin-top: 10px;
-    clear: both;
+.com-wish-btns{
+	max-width: 165px;
+	margin: 0 auto;
+}
+.com-wish-btns button:first-child{
+	padding: 6px 12px;
+	    clear: both;
 }
 
-.product-placeholder button:last-child{
-	width: 42px;
-    height: 42px;
-    float: right;
-    margin-top: 10px;
+.com-wish-btns button:last-child{
+	padding: 6px;
+}
+
+.com-wish-btns span{
+	display: none;
 }
 
 .product-placeholder p:nth-child(3){
-    margin: 10px 0;
+    margin: 15px 0;
     font-weight: 700;
 }
 
@@ -680,7 +684,7 @@ button{
 
 @media only screen and (max-width: 768px){
 	.product-placeholder button:nth-child(4){
-		margin-left: 18px;
+		padding: 6px 12px;
 	}
 
 	.mobile-account-compare{
@@ -810,6 +814,15 @@ button{
 	.menu-panel div:last-child input{
 		margin-bottom: 15px;
 	}
+	.tab-btn{
+		height: 35px;
+		font-size: 15px;
+	}
+	.product-section-header button{
+		 margin-top: 0; 
+		padding: 6px 12px;
+		font-size: 15px;
+	}
 }
 
 @media only screen and (width: 768px){
@@ -872,11 +885,42 @@ button{
 	.product-placeholder button:nth-child(4){
 		margin-left: unset;
 	}
+	.com-wish-btns button:first-child{
+		width: 100%;
+	}
+	.com-wish-btns button:last-child{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	.com-wish-btns span{
+		display: inline-block;
+		margin-right: 5px;
+	}
+	.com-wish-btns i{
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 414px){
 	.product-placeholder button:nth-child(4){
 		margin-left: 25%;
+	}
+}
+
+@media only screen and (max-width: 375px){
+	.logo{
+		margin-top: 2px;
+	}
+	.account-compare-icon{
+		width: 35px;
+		height: 35px;
+	}
+	.menu-bars{
+		transform: scale(0.75);
+	}
+	.product-placeholder img{
+		max-width: 114px;
 	}
 }
 /*=====  End of responsive  ======*/
