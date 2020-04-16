@@ -124,6 +124,11 @@
 .ui-slider .ui-slider-handle {
     width: 28px;
     height: 28px;
+    cursor: grab;
+}
+
+.ui-slider .ui-slider-handle:active{
+	cursor: grabbing;
 }
 
 .ui-widget-header {
