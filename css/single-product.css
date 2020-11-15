@@ -643,4 +643,7 @@ fieldset, label { margin: 0; padding: 0; }
 	#magnific{
 		overflow: hidden;
 	}
+	.relatedproduct:not(:last-child){
+		border-bottom: 1px solid #041053;
+	}
 }
